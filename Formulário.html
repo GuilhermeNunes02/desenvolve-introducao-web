@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Pesquisa de Satisfação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    .radio-group, .checkbox-group {
+      margin-top: 10px;
+    }
+
+    .submit-button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📋 Pesquisa de Satisfação</h1>
+
+  <form action="#" method="post">
+
+    <!-- a. Dados Pessoais -->
+    <fieldset>
+      <legend><h2>Dados Pessoais</h2></legend>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone">
+    </fieldset>
+
+    <!-- b. Pesquisa -->
+    <fieldset>
+      <legend><h2>Pesquisa</h2></legend>
+
+      <label>1. Como você avalia o atendimento?</label>
+      <div class="radio-group">
+        <input type="radio" id="atendimento1" name="atendimento" value="ótimo" required>
+        <label for="atendimento1">Ótimo</label>
+
+        <input type="radio" id="atendimento2" name="atendimento" value="bom">
+        <label for="atendimento2">Bom</label>
+
+        <input type="radio" id="atendimento3" name="atendimento" value="ruim">
+        <label for="atendimento3">Ruim</label>
+      </div>
+
+      <label>2. Você recomendaria nosso serviço?</label>
+      <div class="radio-group">
+        <input type="radio" id="recomenda1" name="recomenda" value="sim" required>
+        <label for="recomenda1">Sim</label>
+
+        <input type="radio" id="recomenda2" name="recomenda" value="não">
+        <label for="recomenda2">Não</label>
+      </div>
+
+      <label for="frequencia">3. Com que frequência você usa nossos serviços?</label>
+      <select id="frequencia" name="frequencia" required>
+        <option value="">Selecione...</option>
+        <option value="semanalmente">Semanalmente</option>
+        <option value="mensalmente">Mensalmente</option>
+        <option value="raramente">Raramente</option>
+      </select>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="autorizacao" name="autorizacao">
+        <label for="autorizacao">Autorizo compartilhar minha resposta com terceiros</label>
+      </div>
+    </fieldset>
+
+    <button type="submit" class="submit-button">Enviar</button>
+
+  </form>
+
+</body>
+</html>

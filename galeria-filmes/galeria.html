@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria de Filmes Favoritos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #52ce00;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .galeria a img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border: 3px solid #000000;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .galeria a img:hover {
+      transform: scale(1.05);
+      border-color: #00d9ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎬 Meus Filmes Favoritos</h1>
+
+  <div class="galeria">
+    <a href="https://pt.wikipedia.org/wiki/Spider-Man:_No_Way_Home" target="_blank">
+      <img src="filme1.jpg" alt="Spider Man No Way Home">
+    </a>
+    <a href="https://pt.wikipedia.org/wiki/Matrix" target="_blank">
+      <img src="filme2.jpg" alt="Matrix">
+    </a>
+    <a href="https://pt.wikipedia.org/wiki/Jurassic_World" target="_blank">
+      <img src="filme3.jpg" alt="Jurassic World">
+    </a>
+    <a href="https://pt.wikipedia.org/wiki/A_Origem_dos_Guardiões" target="_blank">
+      <img src="filme4.webp" alt="A Origem dos Guardiões">
+    </a>
+    <a href="https://baki-fandom-com.translate.goog/wiki/Hanma_Baki_VS_Kengan_Ashura?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc" target="_blank">
+      <img src="filme5.jpg" alt="Baki vs Kengan">
+    </a>
+    <a href="https://pt.wikipedia.org/wiki/The_SpongeBob_SquarePants_Movie" target="_blank">
+      <img src="filme6.jpg" alt="Bob Esponja (2004)">
+    </a>
+  </div>
+<p><strong>  os meus filmes que assisti recentemente e gostei muito. :) </strong></p>
+</body>
+</html>
